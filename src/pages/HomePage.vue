@@ -1,5 +1,6 @@
 <template>
    <div class="homepage-card"> <br>
+      <img src="assets/profile.png" class="pfp-image">
       <h2>Mikoro</h2>
       <p>✦ me when I obsess over fictional worldbuilding stuff cuz I can ✦</p>
       <div class="links"> 
@@ -25,7 +26,9 @@
 </template>
 
 <script scoped>
-
+   export default {
+      name: "HomePage"
+   }
 </script>
 
 <style>
@@ -70,7 +73,6 @@
       border: none;
       background-color: white;
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       margin-top: 30px;
    }
    .post-content p{
@@ -103,5 +105,9 @@
    .homepage-card span {
       color:#A20435;
       font-weight: bold;
+   }
+   .pfp-image {
+      border: #1B2126;
+      border-radius: 20px;
    }
 </style>

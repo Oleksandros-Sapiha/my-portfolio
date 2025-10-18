@@ -1,20 +1,16 @@
 <template>
-  <Homepage msg="Welcome to Your Vue.js App"/>
+	<div id="app">
+	<router-view></router-view>
+		<HomePage/>
+	</div>
 </template>
 
-<script>
-import Homepage from './pages/HomePage.vue'
+	<script>
+import HomePage from './pages/HomePage';
 
 export default {
-  name: 'App',
-  components: {
-    Homepage
-  }
-}
-</script>
-
-<style>
-  #app {
-    font-family: system-ui, Roboto, sans-serif;
-  }
-</style>
+	components: {
+		HomePage,
+	}
+};
+	</script>
