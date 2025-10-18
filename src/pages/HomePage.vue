@@ -1,8 +1,4 @@
 <template>
-   <div>
-      <div class="logo">MY <span>PORT</span>FOLIO</div>
-      <img src="assets/BackgroundImage.jpg" loading="lazy" class="background-image">
-   </div>
    <div class="homepage-card"> <br>
       <h2>Mikoro</h2>
       <p>✦ me when I obsess over fictional worldbuilding stuff cuz I can ✦</p>
@@ -13,7 +9,7 @@
       </div>
       <p>Just some Worldbuilder Fella who’s obsessed with Rainworld and Military stuff. 
       Made that website with the help of my Online Web-designing Class Teacher, Dmytro, he’s a cool guy, thanks to him for everything.
-      one of the members of PROJECT: STARFALL</p>
+      one of the members of <span>PROJECT: STARFALL</span></p>
       <ul>
          <li>Beginner in Digital Art</li>
          <li>Worldbuilder</li>
@@ -106,12 +102,5 @@
    }
    .background-image {
       padding: 1440px, 601px;
-   }
-   .logo span {
-      color:#2e6e9e;
-   }
-   .logo {
-      color: white;
-      font-size: 35px;
    }
 </style>
