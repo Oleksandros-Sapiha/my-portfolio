@@ -1,6 +1,7 @@
 <template>
    <div>
-      <img src="BackgroundImage.jpg" class="background-image">
+      <div class="logo">MY <span>PORT</span>FOLIO</div>
+      <img src="assets/BackgroundImage.jpg" loading="lazy" class="background-image">
    </div>
    <div class="homepage-card"> <br>
       <h2>Mikoro</h2>
@@ -21,7 +22,7 @@
       </ul> <br>
    </div>
    <div class="post-content">
-      <img src="PostImage.png" class="image">
+      <img src="assets/PostImage.png" loading="lazy" class="image">
       <p>Some cool tree models available for y’all, don’t miss</p>
       <button>DOWNLOAD</button>
    </div>
@@ -49,8 +50,7 @@
       background-color: #1B2126;
       border-radius: 25px;
       margin-top: 440px;
-      width: 1000px;
-      padding: 103px, 683px;
+      width: 1300px;
    }
    .homepage-card, h2 {
       text-align: center;
@@ -106,5 +106,12 @@
    }
    .background-image {
       padding: 1440px, 601px;
+   }
+   .logo span {
+      color:#2e6e9e;
+   }
+   .logo {
+      color: white;
+      font-size: 35px;
    }
 </style>
