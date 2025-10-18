@@ -1,14 +1,14 @@
 [
     { "username": "admin", "password": "12345" ,
-    "name": "Іван Петренко",
-    "role": "Адміністратор",
-    "phone": "+380123456789",
+    "name": "Alexsandros Eledmaro",
+    "role": "Admin",
+    "phone": "+380123456789 (it's not real, do not call it)",
     "email": "ivan@example.com",  
-    "photo": "https://www.recordnet.com/gcdn/presto/2021/03/22/NRCD/9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003.JPG"},
-    { "username": "user", "password": "qwerty" ,"name": "Поліна Марченко",
-    "role": "Адміністратор",
-    "phone": "+380123456789",
+    "photo": "https://pbs.twimg.com/media/G3jCjoXW8AAPn6a?format=jpg&name=medium"},
+    { "username": "user", "password": "qwerty" ,"name": "Polyna Marchello (names tho)",
+    "role": "Admin",
+    "phone": "+380123456789 (seriously, it's just an example)",
     "email": "polyna@example.com",
-    "photo": "https://www.recordnet.com/gcdn/presto/2021/03/22/NRCD/9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003.JPG"
+    "photo": "https://pbs.twimg.com/media/G3h1TX_XcAIRlY3?format=jpg&name=large"
     }
 ]

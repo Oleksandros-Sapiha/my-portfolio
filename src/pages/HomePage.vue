@@ -5,12 +5,14 @@
          <h2>Mikoro</h2>
          <p>✦ me when I obsess over fictional worldbuilding stuff cuz I can ✦</p>
          <div class="links"> 
-            <a href="#">POSTS</a>
-            <a href="#">ASK ME ANYTHING</a>
-            <a href="#">ARCHIVE</a>
+            <a href="#post-content">POSTS</a>
+            <a href="components/FooterComponent.vue/#Form">ASK ME ANYTHING</a>
+            <a href="#post-content">ARCHIVE</a>
          </div>
-         <p>Just some Worldbuilder Fella who’s obsessed with Rainworld and Military stuff. 
-         Made that website with the help of my Online Web-designing Class Teacher, Dmytro, he’s a cool guy, thanks to him for everything.
+         <p>Just some Worldbuilder Fella who’s obsessed with Rainworld and Military stuff. <br>
+         Made that website with the help of my <br>
+         Online Web-designing Class Teacher, Dmytro,
+         he’s a cool guy, thanks to him for everything. <br>
          one of the members of <span>PROJECT: STARFALL</span></p>
          <ul>
             <li>Beginner in Digital Art</li>
@@ -35,7 +37,7 @@
 
 <style scoped>
    .homepage {
-      min-height: 100vh;
+      min-height: 150vh;
       background-color: #171A21;
       padding-bottom: 50px;
    }
@@ -62,7 +64,7 @@
 
    .homepage h2 {
       color: #E20346;
-      font-weight: condensed;
+      font-stretch: condensed;
       font-size: 45px;
       margin-left: 20px;
       margin-bottom: 0;

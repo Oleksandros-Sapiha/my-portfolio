@@ -1,34 +1,26 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import AdminDashboard from './pages/AdminDashboard.vue';
-import ManageProducts from './pages/ManageProducts.vue';
-import ManageReviews from './pages/ManageReviews.vue';
-import LoginPage from './pages/LoginPage.vue';
-import ProfilePage from './pages/ProfilePage.vue';
+import NavDashboard from './pages/NavDashboard.vue'
+import HomePage from './pages/HomePage.vue'
+import WorkList from './components/WorkList.vue'
+import FooterComponent from './components/FooterComponent.vue'
 
 const routes = [
    {
-      path: '/',
-      component: AdminDashboard,
-      children: [
-         {path: '', component: ManageProducts},
-         {path: 'reviews', component: ManageReviews},
-      ],
+      path: '/admin/homepage',
+      component: HomePage
    },
    {
-      path: '/admin',
-      component: AdminDashboard,
-      children: [
-         {path: 'products', component: ManageProducts},
-         {path: 'reviews', component: ManageReviews},
-      ],
+      path: '/admin/archive',
+      component: ArchivePage
    },
-   {path: '/login', component: LoginPage},
-   {path: '/profile', component: ProfilePage},
-];
-
-const router = createRouter({
-   history: createWebHistory('/my-shop7.7/'),
+   {
+      path: '/login',
+      component: LoginPage
+   }
+]
+   const router = createRouter({
+   history: createWebHistory('/last-project/'),
    routes,
-});
+   });
 
 export default router;

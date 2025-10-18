@@ -6,7 +6,6 @@
          <router-link to="/admin/archive" active-class="active-link">Archive</router-link>
          <router-link to="/login" active-class="active-link">Profile</router-link>
       </nav>
-
       <main>
          <router-view />
       </main>
@@ -22,17 +21,18 @@
 <style scoped>
    div {
       display: flex;
-      justify-content: column;
+      flex-direction: column;
       min-height: 100vh;
    }
 
    nav {
       display: flex;
-      justify-content: right;
+      justify-content: center; 
+      align-items: center;   
       gap: 74px;
       position: sticky;
       top: 0;
-      z-index: 1000;
+      z-index: 900;
       color: white;
    }
 
