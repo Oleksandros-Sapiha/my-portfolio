@@ -33,11 +33,10 @@
       background-color: #171A21;
    }
    .links {
-      text-decoration: none;
-      color: #E20346;
       display: flex;
       justify-content: space-evenly;
-      list-style: none;
+      text-decoration: none;
+      color: #E20346;
       gap: 3px;
       font-weight: bold;
       margin-left: 40px;
@@ -47,9 +46,9 @@
       border-radius: 25px;
       margin-top: 440px;
       width: 1300px;
+      text-align: center;
    }
    .homepage-card, h2 {
-      text-align: center;
       color: #E20346;
       font-weight: bold;
       font-size: 45px;
@@ -57,13 +56,11 @@
    }
    .homepage-card, p {
       font-weight:normal;
-      text-align: center;
       color: #A20435;
       font-size: 13px;
    }
    ul {
       font-weight:normal;
-      text-align: center;
       color:#A20435;
       font-size: 13px;
       list-style: none;
@@ -102,5 +99,9 @@
    }
    .background-image {
       padding: 1440px, 601px;
+   }
+   .homepage-card span {
+      color:#A20435;
+      font-weight: bold;
    }
 </style>
