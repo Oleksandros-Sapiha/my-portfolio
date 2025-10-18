@@ -28,11 +28,12 @@
 
    nav {
       display: flex;
-      justify-content: center;
+      justify-content: right;
       gap: 74px;
       position: sticky;
       top: 0;
       z-index: 1000;
+      color: white;
    }
 
    a {
@@ -54,5 +55,13 @@
    main {
       padding: 20px;
       margin: 20px;
+   }
+
+   span {
+      color: #0F4869;
+   }
+   
+   h2 {
+      color: white;
    }
 </style>

@@ -1,98 +1,152 @@
 <template>
-   <footer class="footer">
-      <div class="footer-content">
-         <h2>MY <span>PORT</span>FOLIO</h2>
-         <p>Follow me for more on social media
-         if you have questions? Ask me in DMs
-         Support me on Ko-Fi</p>
-         <a href="https://x.com/MikoroElamaris"><img src="assets/twitter-logo.png" loading="lazy" class="image-first"></a>
-         <a href="https://t.me/@AlexSapiha"><img src="assets/telegram-logo.webp" loading="lazy" class="image-second"></a>
-         <a href="https://discordapp.com/users/1224124971081797724"><img src="assets/discord-logo.webp" loading="lazy" class="image-third"></a>
-         <a href="https://ko-fi.com/"><img src="assets/ko-fi-logo.png" loading="lazy" class="image-fourth"></a>
-         <div class="footer-misc">
-            <p>&copy; MY PORTFOLIO - All Rights are Reserved.</p>
-         </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <h2>MY <span>PORT</span>FOLIO</h2>
+      <p>
+        Follow me for more on social media.<br>
+        If you have questions? ask me in DMs.<br>
+        Support me on Ko-Fi
+      </p>
 
-         <ul>
-            <li><p>Navigation</p></li>
-            <li><a href="#">Homepage</a></li>
-            <li><a href="#">Archive</a></li>
-            <li><a href="#">Log in | Sign out</a></li>
-            <li><a href="#">Commissions</a></li>
-         </ul>
-
-         <ul>
-            <li><p>Navigation</p></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="#">Credits</a></li>
-            <li><a href="#">Subscription</a></li>
-         </ul>
-
-         <section id="Form">
-            <h2>Commissions</h2>
-            <p>There you could choose a type of comission you want:</p>
-            <form action="/submit-form" method="post">
-               <label for="commission-type">Type of comission:</label>
-               <select id="commission-type">
-                  <option value="full-model">$5 - Roblox Vignette (small)</option>
-                  <option value="standard">$10 - Roblox Vignette (large)</option>
-                  <option value="full-map">$15 - Fanart</option>
-               </select>
-               <label for="name">Your name: </label>
-               <input type="text" id="name" name="name" placeholder="Please enter your name here" required>
-               <button type="submit">Submit</button>
-            </form>
-         </section> <br> <hr>
-         
-         <div>
-            <img src="assets/Element.png">
-            <p>All Payments are 100% Secure.</p>
-         </div>
+      <div class="socials">
+        <a href="https://x.com/MikoroElamaris"><img src="assets/twitter-logo.png" loading="lazy" class="image-first"></a>
+        <a href="https://t.me/@AlexSapiha"><img src="assets/telegram-logo.webp" loading="lazy" class="image-second"></a>
+        <a href="https://discordapp.com/users/1224124971081797724"><img src="assets/discord-logo.webp" loading="lazy" class="image-third"></a>
+        <a href="https://ko-fi.com/"><img src="assets/ko-fi-logo.png" loading="lazy" class="image-fourth"></a>
       </div>
-   </footer>
+
+      <div class="footer-misc">
+        <p>&copy; MY PORTFOLIO - All Rights Reserved.</p>
+        <img src="assets/Element.png">
+        <p>All Payments are 100% Secure.</p>
+      </div>
+
+      <div class="footer-links">
+        <ul>
+          <li><p>Navigation</p></li>
+          <li><a href="#">Homepage</a></li>
+          <li><a href="#">Archive</a></li>
+          <li><a href="#">Log in | Sign out</a></li>
+          <li><a href="#">Commissions</a></li>
+        </ul>
+
+        <ul>
+          <li><p>About</p></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Credits</a></li>
+          <li><a href="#">Subscription</a></li>
+        </ul>
+      </div>
+
+      <section id="Form">
+        <p>Commissions</p>
+        <p class="form-desc">Choose the type of commission you want:</p>
+        <form action="/submit-form" method="post">
+          <label for="commission-type">Type of commission:</label>
+          <select id="commission-type">
+            <option value="full-model">$5 - Roblox Vignette (small)</option>
+            <option value="standard">$10 - Roblox Vignette (large)</option>
+            <option value="full-map">$15 - Fanart</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </div>
+  </footer>
 </template>
 
 <script>
-   export default {
-      name: "FooterComponent",
-   };
+export default {
+  name: "FooterComponent",
+};
 </script>
 
-<style>
-   body {
-      background: linear-gradient(to bottom, #18222F, #131a24);
-   }
+<style scoped>
+.footer {
+  background: linear-gradient(to bottom, #18222F, #131a24);
+  padding: 60px 20px;
+  color: #CCCCCC;
+}
 
-   ul {
-      align-items: left;
-      list-style: none;
-   }
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
 
-   p {
-      font-size: 14px;
-      font-weight: bold;
-      word-spacing: -3%;
-      color: #CCCCCC;
-   }
+.footer p {
+   font-weight: bold;
+   letter-spacing: -5%;
+}
 
-   .image-first {
-      width: 73px;
-      height: 53px;
-   }
+.footer h2 {
+  color: white;
+  font-family: "Bahnschrift";
+  font-size: 40px;
+}
 
-   .image-second {
-      width: 58px;
-      height: 58px;
-   }
+.footer span {
+  color: #0F4869;
+}
 
-   .image-third {
-      width: 43px;
-      height: 43px;
-   }
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
 
-   .image-forth {
-      width: 44px;
-      height: 44px;
-   }
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li a {
+  color: #CCCCCC;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.socials a img {
+  margin: 10px;
+}
+
+.image-first { 
+   width: 73px; height: 53px; 
+}
+
+.image-second { 
+   width: 58px; height: 58px; 
+}
+
+.image-third { 
+   width: 43px; height: 43px;
+}
+
+.image-fourth { 
+   width: 44px; height: 44px; 
+}
+
+.footer-misc {
+  margin-top: 40px;
+  font-size: 13px;
+  color: #888;
+}
+
+button {
+   background: linear-gradient(to bottom, #328B12, #2E6619);
+   border: none;
+   border-radius: 3px;
+   font-weight: bold;
+   color: white;
+   cursor: pointer;
+}
+
+button:hover {
+   background: linear-gradient(to bottom, #41aa1b, #48912d);
+}
+
+.form-desc {
+   font-weight: normal;
+}
 </style>
