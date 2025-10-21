@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-main">
-        <div class="footer-links">
+        <div class="footer-left">
           <h2>MY <span>PORT</span>FOLIO</h2>
           <h3>
             Follow me for more on social media.<br>
@@ -11,22 +11,22 @@
           </h3>
 
           <div class="socials">
-            <a href="https://x.com/MikoroElamaris"><img src="assets/twitter-logo.png" loading="lazy" class="image-first"></a>
-            <a href="https://t.me/@AlexSapiha"><img src="assets/telegram-logo.webp" loading="lazy" class="image-second"></a>
-            <a href="https://discordapp.com/users/1224124971081797724"><img src="assets/discord-logo.webp" loading="lazy" class="image-third"></a>
-            <a href="https://ko-fi.com/"><img src="assets/ko-fi-logo.png" loading="lazy" class="image-fourth"></a>
+            <a href="https://x.com/MikoroElamaris"><img src="@/assets/twitter-logo.webp" loading="lazy" class="icons"></a>
+            <a href="https://t.me/@AlexSapiha"><img src="@/assets/telegram-logo.webp" loading="lazy" class="icons"></a>
+            <a href="https://discordapp.com/users/1224124971081797724"><img src="@/assets/discord-logo.webp" loading="lazy" class="icons"></a>
+            <a href="https://ko-fi.com/"><img src="@/assets/ko-fi-logo.png" loading="lazy" class="icons"></a>
           </div>
           <p class="copyright-footer">&copy; MY PORTFOLIO - All Rights Reserved.</p>
         </div>
 
         <div class="footer-right">
-          <div class="footer-nav">
+          <div class="footer-links">
             <ul>
               <li><p>Navigation</p></li>
-              <li><a href="pages/HomePage.vue">Homepage</a></li>
+              <li><a href="pages/HomePage.vue">HomePage</a></li>
               <li><a href="pages/ArchivePage.vue">Archive</a></li>
-              <li><a href="">Log in | Sign out</a></li>
-              <li><a href="#">Commissions</a></li>
+              <li><a href="pages/LoginPage.vue">Log in | Sign out</a></li>
+              <li><a href="#Form">Commissions</a></li>
             </ul>
 
             <ul>
@@ -54,7 +54,7 @@
         </div>
       </div> <hr>
       <div class="footer-misc">
-        <img src="assets/Element.png" alt="Secure payments" />
+        <img src="@/assets/Element.png" alt="Secure payments" class="guarantee-img"/>
         <p>All Payments are 100% Secure.</p>
       </div>
     </div>
@@ -68,14 +68,15 @@ export default {
 </script>
 
 <style scoped>
-.footer p {
-  font-weight: bold;
-}
-
 .footer {
   background: linear-gradient(to bottom, #18222F, #131a24);
   padding: 60px 20px;
   color: #CCCCCC;
+}
+
+.guarantee-img {
+  width: 1000px;
+  height: 500px;
 }
 
 .footer-content {
@@ -90,27 +91,27 @@ export default {
   gap: 60px;
 }
 
-.footer-links {
+.footer-left {
   flex: 1 1 40%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.footer-links h2 {
+.footer-left h2 {
   font-family: "Bahnschrift";
   font-stretch: condensed;
   color: white;
   font-size: 40px;
 }
 
-.footer-links h3 {
+.footer-left h3 {
   font-weight: bold;
   line-height: 1.5;
   margin-top: 10px;
 }
 
-.footer-links span {
+.footer-left span {
   color: #0F4869;
 }
 
@@ -142,9 +143,9 @@ export default {
   align-items: flex-start;
 }
 
-.footer-nav {
+.footer-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
   gap: 50px;
 }
@@ -170,23 +171,14 @@ ul li a {
 }
 
 ul li a:hover {
-  color: #4c398f;
+  color: #1e1b49;
 }
 
-.image-first { 
-   width: 73px; height: 53px; 
-}
-
-.image-second { 
-   width: 58px; height: 58px; 
-}
-
-.image-third { 
-   width: 43px; height: 43px;
-}
-
-.image-fourth { 
-   width: 44px; height: 44px; 
+.icons { 
+   width: 43px; 
+   height: 43px; 
+   display: flex;
+   justify-content: start;
 }
 
 #Form {

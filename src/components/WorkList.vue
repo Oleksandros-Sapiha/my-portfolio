@@ -54,7 +54,7 @@
       font-stretch: condensed;
       text-align: left;
    }
-   .work-section nav {
+   #work-examples {
       background-color: white;
       border-radius: 8px;
       color: #555555;

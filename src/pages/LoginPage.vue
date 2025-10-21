@@ -1,10 +1,12 @@
 <template>
-   <div class="login-container">
-      <h2>Log in into your account dude</h2>
-      <input v-model="username" placeholder="Логін">
-      <input v-model="password" type="password" placeholder="Пароль">
-      <button v-on:click="login">login</button>
-      <p v-if="message" class="error"> {{ message }}</p>
+   <div class="login-style">
+      <div class="login-container">
+         <h2>Log in into your account dude</h2>
+         <input v-model="username" placeholder="Username">
+         <input v-model="password" type="password" placeholder="Password">
+         <button v-on:click="login">Login</button>
+         <p v-if="message" class="error"> {{ message }}</p>
+      </div>
    </div>
 </template>
 
@@ -52,7 +54,35 @@
 };
 </script>
 
-<style>
+<style scoped>
+   h2 {
+      color: white;
+      font-family: "Bahnschrift";
+      font-stretch: condensed;
+      text-align: center;
+   }
+   button {
+      background: linear-gradient(to bottom, #221f5b, #190d42);
+      height: 48px;
+      width: 300px;
+      color: white;
+      font-weight: bold;
+      text-align: left;
+      border: none;
+      border-radius: 3px;
+      font-size: 19px;
+      cursor: pointer;
+   }
+
+   .login-style {
+      border-radius: 20px;
+      background: linear-gradient(to bottom, #091825, #111214);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 700px;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+   }
    .login-container {
       max-width: 300px;
       margin: 50px auto;

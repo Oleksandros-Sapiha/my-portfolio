@@ -6,7 +6,7 @@
          <p>✦ me when I obsess over fictional worldbuilding stuff cuz I can ✦</p>
          <div class="links"> 
             <a href="#post-content">POSTS</a>
-            <a href="components/FooterComponent.vue/#Form">ASK ME ANYTHING</a>
+            <a href="#Form">ASK ME ANYTHING</a>
             <a href="#post-content">ARCHIVE</a>
          </div>
          <p>Just some Worldbuilder Fella who’s obsessed with Rainworld and Military stuff. <br>
@@ -29,7 +29,7 @@
    </div>
 </template>
 
-<script scoped>
+<script>
    export default {
       name: "HomePage"
    }
@@ -37,7 +37,7 @@
 
 <style scoped>
    .homepage {
-      min-height: 150vh;
+      min-height: 130vh;
       background-color: #171A21;
       padding-bottom: 50px;
    }
@@ -45,11 +45,15 @@
    .links {
       display: flex;
       justify-content: space-evenly;
-      text-decoration: none;
       color: #E20346;
-      gap: 3px;
+      gap: 2px;
       font-weight: bold;
       margin-left: 40px;
+   }
+
+   .links a {
+      color: inherit;
+      text-decoration: none;
    }
 
    .homepage-card {
@@ -86,7 +90,7 @@
    }
 
    .post-content {
-      max-width: 315px;
+      max-width: 400px;
       border: none;
       background-color: white;
       border-radius: 8px;
@@ -99,13 +103,13 @@
       color: #555555;
       margin-left: 5px;
       text-align: left;
-      font-size: 15px;
+      font-size: 14px;
    }
 
    button {
       background: linear-gradient(to bottom, #328B12, #2E6619);
       height: 68px;
-      width: 141px;
+      width: 200px;
       color: white;
       font-weight: bold;
       text-align: left;
@@ -118,7 +122,7 @@
    }
 
    .image {
-      width: 315px;
+      width: 400px;
       height: 325px;
       margin-top: 4px;
       object-fit: cover;
@@ -136,5 +140,6 @@
    .pfp-image {
       border: #1B2126;
       border-radius: 20px;
+      margin-left: 10px;
    }
 </style>

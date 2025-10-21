@@ -1,38 +1,54 @@
 <template>
    <div>
       <h2>MY <span>PORT</span>FOLIO</h2>
-      <nav>
-         <router-link to="/admin/homepage" active-class="active-link">Home</router-link>
-         <router-link to="/admin/archive" active-class="active-link">Archive</router-link>
-         <router-link to="/login" active-class="active-link">Profile</router-link>
+      <nav class="nav-links">
+         <router-link to="/">Home</router-link>
+         <router-link to="/archive">Archive</router-link>
+         <router-link to="/footer">Commissions</router-link>
       </nav>
-      <main>
-         <router-view />
-      </main>
+      <nav class="nav-registration">
+         <router-link to="/login">Sign in / Log in</router-link>
+      </nav>
    </div>
 </template>
 
 <script>
    export default {
-      name: "NavDashboard",
+      name: "NavDashboard"
    };
 </script>
 
 <style scoped>
+   .nav-links a,
+   .nav-registration a {
+   font-size: inherit !important;
+   }  
+
    div {
       display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-   }
-
-   nav {
-      display: flex;
-      justify-content: center; 
-      align-items: center;   
-      gap: 74px;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #00000004;
+      padding: 15px 80px;
       position: sticky;
       top: 0;
-      z-index: 900;
+      z-index: 1000;
+   }
+
+   .nav-registration {
+      display: flex;
+      justify-content: right;
+      color: white;
+      font-size: 13px;
+      margin-right: 25px;
+   }
+
+   .nav-links {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      gap: 60px;
+      font-weight: bold;
       color: white;
    }
 
@@ -62,6 +78,10 @@
    }
    
    h2 {
+      font-size: 40px;
       color: white;
+      margin-left: 10px;
+      font-family: "Bahnschrift";
+      font-stretch: condensed;
    }
 </style>
